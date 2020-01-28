@@ -4,14 +4,25 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+#head-img {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) ), url("assets/building.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .dark {
     background-color: #2a2a2a;
     color: white;
+    padding-right: 15%;
+    padding-left: 15%;
 }
 
 .light {
     background-color: white;
     color: black;
+    padding-right: 15%;
+    padding-left: 15%;
 }
 
 .highlight {
@@ -20,6 +31,8 @@
 
 h2 {
     text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 20%;
 }
 
 h2 .highlight {
@@ -36,6 +49,10 @@ header {
     min-height: 400px;
 }
 
+a {
+    color: white;
+}
+
 a:hover {
     color: #BAD435;
     text-decoration: none;
@@ -47,8 +64,27 @@ nav .col {
 
 nav a {
     color: white;
+    text-transform: uppercase;
+    margin: 4%;
+    margin-right: 0;
 }
 
+.col {
+    padding-bottom: 10%;
+}
+
+.col-md-8 {
+    border-top: solid 2px #BAD435;
+    padding: 30px;
+    padding-left: 1%;
+    font-size: 1.2rem;
+}
+
+#bio-col{
+    border-top: none;
+    padding: 30px;
+    padding-left: 0;
+}
 
 /* resize images for bio base on screen size */
 
@@ -61,10 +97,12 @@ nav a {
 .bio {
     /* display: flex; */
     align-items: center;
+    margin-bottom: 6%;
 }
 
 .bio h3 {
     border-bottom: solid 1px #BAD435;
+    padding-bottom: 2%;
 }
 
 .bio img {
@@ -87,15 +125,34 @@ nav a {
 
 @media (min-width: 992px) {
     .bio img {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 }
 
-7
 /* Large devices (large desktops, 1200px and up) 
 
 @media (min-width: 1200px) {
     ...
 }
 */
+
+#blog {
+    color:white 
+}
+
+i.fab.fa-twitter::before {
+    font-size: x-large;
+}
+
+i.fab.fa-twitter ::hover {
+    font-size: x-large;
+}
+
+.contact {
+    padding-top: 2%;
+}
+
+#twitter {
+    display: inline-block;
+}
